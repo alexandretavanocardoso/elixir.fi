@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "elixiFi_backend": {
+      "main": "src/elixiFi_backend/main.mo",
+      "type": "motoko"
+    },
+    "elixiFi_frontend": {
+      "dependencies": [
+        "elixiFi_backend"
+      ],
+      "source": [
+        "src/elixiFi_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "elixiFi_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
